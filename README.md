@@ -44,7 +44,7 @@ Let's consider the `Animal` class.
 - Abstract method `makeSound()`.
   - We want all animals to be able to make a sound.
   - We do not think there is a generic sound that applies to all animals, so we
-    don't want the `Animal` class to have implement the `makeSound()` method. 
+    don't want the `Animal` class to implement the `makeSound()` method. 
 
 A class that defines an abstract method must be declared as abstract.
 Let's add the keyword `abstract` to the class definition:
