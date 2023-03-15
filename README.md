@@ -22,6 +22,14 @@ So if we wanted to give all our animals the ability to make a sound, but we
 couldn't implement a "generic" sound on the parent class, then we could make the
 `Animal` class `abstract`.
 
+In this lesson, we will define an abstract class `Animal` that will
+be extended by a concrete class `Cat`. We italicize the names of abstract classes and abstract methods in the UML class diagram
+as shown below.  Concrete class and methods are not italicized.
+
+![abstract class uml](https://curriculum-content.s3.amazonaws.com/6677/pillars/abstract_class_uml.png)
+
+
+
 ## Abstract Class in Java
 
 - An `abstract` class is a class that cannot be instantiated. 
@@ -85,6 +93,8 @@ Essentially, the `Animal` class has now declared that it's "incomplete". It
 wants to "make a sound", but it has not defined "how to make a sound", i.e. that
 method has no implementation.
 
+
+
 In order to be used, an `abstract` class must be extended and its `abstract`
 methods must be implemented. For example, we can implement the `makeSound()`
 method in a `Cat` class as follows:
@@ -116,6 +126,7 @@ myCat.makeSound();   //abstract method overriden and implemented in Cat
 As we can see, the `Animal` class has default behavior that applies to all
 animals, like the `eat()` method.
 
+
 Abstract classes are used when default properties and behaviors need to be
 defined for a specific type of object, but some behavior needs to be left
 undefined by the parent class and must be implemented by the child classes. In
@@ -132,3 +143,4 @@ We also want to establish that any `Animal` that doesn't make a sound is
 "incomplete" and therefore cannot be used. So the `Animal` class cannot be
 instantiated on its own and needs a subclass that implements the missing
 functionality.
+
